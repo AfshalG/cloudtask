@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   if (process.env.NODE_ENV === "production") {
     throw new Error("intentional runtime error for verification testing");

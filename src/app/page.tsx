@@ -18,7 +18,7 @@ export default function Home() {
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
-          <a href="/signin" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
+          <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
           <a href="/logn" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
         </div>
       </nav>

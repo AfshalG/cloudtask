@@ -34,6 +34,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats */}
+      <section style={{ padding: '40px 48px 80px', maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', padding: '40px', background: '#111', borderRadius: '16px', border: '1px solid #222' }}>
+          {[
+            { value: '10,000+', label: 'Teams shipping faster' },
+            { value: '2.4M', label: 'Tasks completed monthly' },
+            { value: '99.99%', label: 'Uptime over the last year' },
+          ].map((s, i) => (
+            <div key={i} style={{ textAlign: 'center', borderLeft: i > 0 ? '1px solid #222' : 'none' }}>
+              <div style={{ fontSize: '40px', fontWeight: 800, letterSpacing: '-1.5px', color: '#3b82f6', marginBottom: '6px' }}>{s.value}</div>
+              <div style={{ fontSize: '13px', color: '#888' }}>{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Features */}
       <section id="features" style={{ padding: '80px 48px', maxWidth: '1100px', margin: '0 auto' }}>
         <h2 style={{ fontSize: '36px', fontWeight: 700, textAlign: 'center', marginBottom: '60px', letterSpacing: '-1px' }}>Everything your team needs</h2>

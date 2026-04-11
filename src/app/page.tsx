@@ -7,7 +7,7 @@ export default function Home() {
           <span style={{ color: '#3b82f6' }}>Cloud</span>Task
         </div>
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
-          <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
+          <a href={brokenNavTarget} style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="#pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>

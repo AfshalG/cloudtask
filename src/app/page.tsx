@@ -10,6 +10,7 @@ export default function Home() {
           <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="#pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
+          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
           <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
@@ -30,7 +31,7 @@ export default function Home() {
         </p>
         <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>
           <a href="#" style={{ padding: '12px 28px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>Start Free Trial</a>
-          <a href="#" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Watch Demo</a>
+          <a href="#" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Book a Demo</a>
         </div>
       </section>
 

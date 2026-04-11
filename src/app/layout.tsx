@@ -1,8 +1,23 @@
 import type { Metadata, Viewport } from "next";
 
+const siteTitle = "CloudTask — AI-Powered Task Management";
+const siteDescription = "Manage your team's tasks with AI-powered prioritization and smart workflows.";
+
 export const metadata: Metadata = {
-  title: "CloudTask — AI-Powered Task Management",
-  description: "Manage your team's tasks with AI-powered prioritization and smart workflows.",
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    siteName: "CloudTask",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export const viewport: Viewport = {

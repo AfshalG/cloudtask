@@ -9,6 +9,7 @@ export default function Home() {
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
           <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="#pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
+          <a href="#faq" style={{ color: 'inherit', textDecoration: 'none' }}>FAQ</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
@@ -132,6 +133,44 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" style={{ padding: '80px 48px', maxWidth: '760px', margin: '0 auto' }}>
+        <h2 style={{ fontSize: '36px', fontWeight: 700, textAlign: 'center', marginBottom: '16px', letterSpacing: '-1px' }}>Frequently asked questions</h2>
+        <p style={{ fontSize: '16px', color: '#888', textAlign: 'center', marginBottom: '48px' }}>Everything you need to know before getting started.</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {[
+            {
+              q: 'How does CloudTask\u2019s AI prioritization actually work?',
+              a: 'It scores each task on impact, urgency, dependencies, and your team\u2019s historical velocity, then reshuffles your backlog whenever something meaningful changes. You stay in control — every suggestion is explainable and one click to override.',
+            },
+            {
+              q: 'Can I import tasks from Jira, Linear, or GitHub Issues?',
+              a: 'Yes. CloudTask imports from Jira, Linear, GitHub Issues, Asana, and Trello out of the box, preserving assignees, labels, comments, and attachments. Most teams finish migrating in under an hour.',
+            },
+            {
+              q: 'Is there a free plan?',
+              a: 'The Starter plan is free forever for teams of up to 5 people and includes basic AI sorting. No credit card required to sign up.',
+            },
+            {
+              q: 'How does CloudTask handle security and data privacy?',
+              a: 'All data is encrypted in transit and at rest. We are SOC 2 Type II certified and GDPR compliant. Enterprise customers get SSO/SAML, audit logs, and a dedicated data region.',
+            },
+            {
+              q: 'Can I cancel or change plans at any time?',
+              a: 'Yes. You can upgrade, downgrade, or cancel at any time from your billing settings. Annual plans are pro-rated on downgrade, and there are no cancellation fees.',
+            },
+          ].map((item, i) => (
+            <details key={i} style={{ background: '#111', border: '1px solid #222', borderRadius: '12px', padding: '20px 24px' }}>
+              <summary style={{ cursor: 'pointer', fontSize: '15px', fontWeight: 600, color: '#fafafa', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px' }}>
+                <span>{item.q}</span>
+                <span aria-hidden="true" style={{ color: '#3b82f6', fontSize: '20px', lineHeight: 1, flexShrink: 0 }}>+</span>
+              </summary>
+              <p style={{ fontSize: '14px', color: '#aaa', lineHeight: 1.6, margin: '16px 0 0' }}>{item.a}</p>
+            </details>
           ))}
         </div>
       </section>

@@ -20,7 +20,7 @@ export default function Home() {
       {/* Hero */}
       <section style={{ textAlign: 'center', padding: '120px 24px 80px', maxWidth: '800px', margin: '0 auto' }}>
         <div style={{ display: 'inline-block', padding: '6px 16px', background: '#3b82f620', border: '1px solid #3b82f640', borderRadius: '20px', fontSize: '13px', color: '#3b82f6', marginBottom: '24px' }}>
-          Now with AI Prioritization
+          New: Native Slack & Linear sync
         </div>
         <h1 style={{ fontSize: '56px', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-2px', margin: '0 0 24px' }}>
           The workspace<br />where teams ship faster
@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer style={{ borderTop: '1px solid #222', padding: '40px 48px', textAlign: 'center', color: '#555', fontSize: '13px' }}>
-        © 2026 CloudTask. Built with ❤️ for fast-moving teams.
+        © 2026 CloudTask · Made in San Francisco · Trusted by 10,000+ teams worldwide
       </footer>
     </div>
   );

@@ -23,7 +23,7 @@ export default function Home() {
           Now with AI Prioritization
         </div>
         <h1 style={{ fontSize: '56px', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-2px', margin: '0 0 24px' }}>
-          Task management<br />that thinks ahead
+          The workspace<br />where teams ship faster
         </h1>
         <p style={{ fontSize: '18px', color: '#888', lineHeight: 1.6, maxWidth: '560px', margin: '0 auto 40px' }}>
           CloudTask uses AI to prioritize your backlog, predict blockers, and keep your team shipping. Built for teams that move fast.

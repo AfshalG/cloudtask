@@ -77,6 +77,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section style={{ padding: '80px 48px', maxWidth: '1100px', margin: '0 auto' }}>
+        <h2 style={{ fontSize: '36px', fontWeight: 700, textAlign: 'center', marginBottom: '16px', letterSpacing: '-1px' }}>Loved by teams that ship</h2>
+        <p style={{ fontSize: '16px', color: '#888', textAlign: 'center', marginBottom: '60px' }}>Thousands of teams use CloudTask to stay focused and move faster.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
+          {[
+            {
+              quote: 'CloudTask replaced three tools and cut our sprint planning time in half. The AI prioritization is genuinely useful — not a gimmick.',
+              name: 'Maya Chen',
+              role: 'Head of Engineering, Finch',
+              initials: 'MC',
+            },
+            {
+              quote: 'We shipped our last two releases a week early. The AI flags blockers before they become blockers, and that changes everything.',
+              name: 'Darius Okafor',
+              role: 'Staff PM, Lumen Health',
+              initials: 'DO',
+            },
+            {
+              quote: 'Finally a task manager that feels built for engineers. The Slack and GitHub integrations alone paid for the Pro plan in a week.',
+              name: 'Sofia Rinaldi',
+              role: 'Tech Lead, Parallax Labs',
+              initials: 'SR',
+            },
+          ].map((t, i) => (
+            <div key={i} style={{ padding: '32px', background: '#111', borderRadius: '12px', border: '1px solid #222', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ fontSize: '40px', color: '#3b82f6', marginBottom: '8px', lineHeight: 1, fontFamily: 'Georgia, serif' }}>“</div>
+              <p style={{ fontSize: '15px', color: '#ddd', lineHeight: 1.6, margin: '0 0 24px', flex: 1 }}>{t.quote}</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', paddingTop: '20px', borderTop: '1px solid #1a1a1a' }}>
+                <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#3b82f620', border: '1px solid #3b82f640', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: 600, color: '#3b82f6' }}>
+                  {t.initials}
+                </div>
+                <div>
+                  <div style={{ fontSize: '14px', fontWeight: 600, color: '#fafafa' }}>{t.name}</div>
+                  <div style={{ fontSize: '12px', color: '#777' }}>{t.role}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Footer */}
       <footer style={{ borderTop: '1px solid #222', padding: '40px 48px', textAlign: 'center', color: '#555', fontSize: '13px' }}>
         © 2026 CloudTask. Built with ❤️ for fast-moving teams.

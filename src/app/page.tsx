@@ -11,8 +11,8 @@ export default function Home() {
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
           <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="/pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
-          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
-          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
+          <a href="#docs" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
+          <a href="/changelog" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
           <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
@@ -32,8 +32,8 @@ export default function Home() {
           CloudTask uses AI to prioritize your backlog, predict blockers, and keep your team shipping. Built for teams that move fast.
         </p>
         <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>
-          <a href="#" style={{ padding: '12px 28px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>Start Free Trial</a>
-          <a href="#" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Book a Demo</a>
+          <a href="/signup" style={{ padding: '12px 28px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>Start Free Trial</a>
+          <a href="/contact" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Book a Demo</a>
         </div>
       </section>
 
@@ -90,7 +90,7 @@ export default function Home() {
               <ul style={{ listStyle: 'none', padding: 0, margin: '24px 0' }}>
                 {p.features.map((f, j) => <li key={j} style={{ fontSize: '14px', color: '#aaa', padding: '6px 0', borderBottom: '1px solid #1a1a1a' }}>✓ {f}</li>)}
               </ul>
-              <a href="#" style={{ display: 'block', textAlign: 'center', padding: '10px', background: p.featured ? '#3b82f6' : '#1a1a1a', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '14px', border: p.featured ? 'none' : '1px solid #333' }}>{p.cta}</a>
+              <a href="/signup" style={{ display: 'block', textAlign: 'center', padding: '10px', background: p.featured ? '#3b82f6' : '#1a1a1a', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '14px', border: p.featured ? 'none' : '1px solid #333' }}>{p.cta}</a>
             </div>
           ))}
         </div>

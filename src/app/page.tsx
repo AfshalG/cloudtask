@@ -1,9 +1,6 @@
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-  if (process.env.NODE_ENV === "production") {
-    throw new Error("intentional runtime error for verification testing");
-  }
   return (
     <div style={{ minHeight: '100vh' }}>
       {/* Nav */}
@@ -12,14 +9,14 @@ export default function Home() {
           <span style={{ color: '#3b82f6' }}>Cloud</span>Task
         </div>
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
-          <a href="#featurez" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
-          <a href="/pricingz" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
+          <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
+          <a href="/pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
           <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
-          <a href="/logn" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
+          <a href="/login" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
         </div>
       </nav>
 

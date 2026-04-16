@@ -23,6 +23,12 @@ export default function SettingsPage() {
     setPreferences(defaultPreferences);
   };
 
+  const handleToggle = (id: string) => {
+    setPreferences(prefs =>
+      prefs.map(p => (p.id === id ? { ...p, enabled: !p.enabled } : p))
+    );
+  };
+
   return (
     <div style={{ minHeight: '100vh', padding: '80px 48px', maxWidth: '720px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '40px', fontWeight: 800, letterSpacing: '-1.5px' }}>Settings</h1>
@@ -33,7 +39,17 @@ export default function SettingsPage() {
         {preferences.map((p) => (
           <li
             key={p.id}
-            style={{ padding: '16px 20px', background: '#111', borderRadius: '10px', marginBottom: '12px' }}
+            onClick={() => handleToggle(p.id)}
+            style={{
+              padding: '16px 20px',
+              background: '#111',
+              borderRadius: '10px',
+              marginBottom: '12px',
+              cursor: 'pointer',
+              transition: 'background-color 0.2s',
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.background = '#1a1a1a'}
+            onMouseLeave={(e) => e.currentTarget.style.background = '#111'}
           >
             <span>{p.label}</span>
             <span style={{ float: 'right', color: p.enabled ? '#3b82f6' : '#555' }}>

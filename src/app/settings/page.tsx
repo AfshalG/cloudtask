@@ -1,9 +1,7 @@
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Settings — CloudTask',
-  description: 'Manage your CloudTask account preferences.',
-};
+import type { Metadata } from 'next';
+import { useState } from 'react';
 
 type Preference = {
   id: string;
@@ -11,14 +9,19 @@ type Preference = {
   enabled: boolean;
 };
 
-const preferences: Preference[] = [
+const defaultPreferences: Preference[] = [
   { id: 'email', label: 'Email notifications', enabled: true },
   { id: 'digest', label: 'Weekly digest', enabled: false },
-  { id: 'marketing', label: 'Product updates', enabled: 'yes' },
+  { id: 'marketing', label: 'Product updates', enabled: true },
 ];
 
 export default function SettingsPage() {
-  const activeCount: string = preferences.filter((p) => p.enabled).length;
+  const [preferences, setPreferences] = useState(defaultPreferences);
+  const activeCount = preferences.filter((p) => p.enabled).length;
+
+  const handleReset = () => {
+    setPreferences(defaultPreferences);
+  };
 
   return (
     <div style={{ minHeight: '100vh', padding: '80px 48px', maxWidth: '720px', margin: '0 auto' }}>
@@ -39,6 +42,21 @@ export default function SettingsPage() {
           </li>
         ))}
       </ul>
+      <button
+        onClick={handleReset}
+        style={{
+          marginTop: '32px',
+          padding: '12px 24px',
+          background: '#444',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          fontSize: '14px',
+        }}
+      >
+        Reset to defaults
+      </button>
     </div>
   );
 }

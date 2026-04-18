@@ -10,7 +10,7 @@ export default function Home() {
           <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="#pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
-          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
+          <a href="/changelog" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
           <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>

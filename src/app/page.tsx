@@ -8,13 +8,13 @@ export default function Home() {
         </div>
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
           <a href="#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
-          <a href="#pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
-          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
+          <a href="/pricing" style={{ color: 'inherit', textDecoration: 'none' }}>Pricing</a>
+          <a href="/about" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
           <a href="/changelog" style={{ color: 'inherit', textDecoration: 'none' }}>Changelog</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
-          <a href="#" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
-          <a href="#" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
+          <a href="/about" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
+          <a href="/pricing" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
         </div>
       </nav>
 
@@ -30,8 +30,8 @@ export default function Home() {
           CloudTask uses AI to prioritize your backlog, predict blockers, and keep your team shipping. Built for teams that move fast.
         </p>
         <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>
-          <a href="#" style={{ padding: '12px 28px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>Start Free Trial</a>
-          <a href="#" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Book a Demo</a>
+          <a href="/pricing" style={{ padding: '12px 28px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>Start Free Trial</a>
+          <a href="/about" style={{ padding: '12px 28px', background: '#1a1a1a', color: '#ccc', borderRadius: '8px', textDecoration: 'none', fontWeight: 500, fontSize: '15px', border: '1px solid #333' }}>Book a Demo</a>
         </div>
       </section>
 
@@ -77,9 +77,9 @@ export default function Home() {
         <h2 style={{ fontSize: '36px', fontWeight: 700, textAlign: 'center', marginBottom: '60px', letterSpacing: '-1px' }}>Simple pricing</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
           {[
-            { name: 'Starter', price: '$0', period: '/month', features: ['Up to 5 users', '100 tasks', 'Basic AI sorting', 'Email support'], cta: 'Get Started', href: '#' },
-            { name: 'Pro', price: '$12', period: '/user/mo', features: ['Unlimited users', 'Unlimited tasks', 'Advanced AI', 'Priority support', 'Custom workflows'], cta: 'Start Trial', href: '#', featured: true },
-            { name: 'Enterprise', price: 'Custom', period: '', features: ['Everything in Pro', 'SSO / SAML', 'Dedicated support', 'SLA guarantee', 'Custom integrations'], cta: 'Contact Sales', href: '#' },
+            { name: 'Starter', price: '$0', period: '/month', features: ['Up to 5 users', '100 tasks', 'Basic AI sorting', 'Email support'], cta: 'Get Started', href: '/pricing' },
+            { name: 'Pro', price: '$12', period: '/user/mo', features: ['Unlimited users', 'Unlimited tasks', 'Advanced AI', 'Priority support', 'Custom workflows'], cta: 'Start Trial', href: '/pricing', featured: true },
+            { name: 'Enterprise', price: 'Custom', period: '', features: ['Everything in Pro', 'SSO / SAML', 'Dedicated support', 'SLA guarantee', 'Custom integrations'], cta: 'Contact Sales', href: '/about' },
           ].map((p, i) => (
             <div key={i} style={{ padding: '32px', background: p.featured ? '#3b82f610' : '#111', borderRadius: '12px', border: `1px solid ${p.featured ? '#3b82f640' : '#222'}`, position: 'relative' }}>
               {p.featured && <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#3b82f6', color: '#fff', padding: '4px 12px', borderRadius: '12px', fontSize: '11px', fontWeight: 600 }}>POPULAR</div>}

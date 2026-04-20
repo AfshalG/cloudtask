@@ -81,11 +81,11 @@ export default function PricingPage() {
         <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: '#888' }}>
           <a href="/#features" style={{ color: 'inherit', textDecoration: 'none' }}>Features</a>
           <a href="/pricing" style={{ color: '#fafafa', textDecoration: 'none' }}>Pricing</a>
-          <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
+          <a href="/docs" style={{ color: 'inherit', textDecoration: 'none' }}>Docs</a>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
           <a href="/login" style={{ padding: '8px 16px', fontSize: '14px', color: '#ccc', textDecoration: 'none' }}>Sign In</a>
-          <a href="#" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
+          <a href="/pricing" style={{ padding: '8px 20px', fontSize: '14px', background: '#3b82f6', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 500 }}>Get Started</a>
         </div>
       </nav>
 
@@ -124,7 +124,7 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <a href="#" style={{ display: 'block', textAlign: 'center', padding: '12px', background: p.featured ? '#3b82f6' : '#1a1a1a', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '14px', border: p.featured ? 'none' : '1px solid #333' }}>
+              <a href={p.name === 'Enterprise' ? '/contact' : '/pricing'} style={{ display: 'block', textAlign: 'center', padding: '12px', background: p.featured ? '#3b82f6' : '#1a1a1a', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '14px', border: p.featured ? 'none' : '1px solid #333' }}>
                 {p.cta}
               </a>
             </div>
